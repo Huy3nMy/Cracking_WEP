@@ -1,4 +1,4 @@
-![logo uit](https://github.com/Huy3nMy/Cracking_WEP/tree/master/image/uit-logo.pngimage/uit-logo.png)
+![logo uit](https://github.com/Huy3nMy/Cracking_WEP/tree/master/image/uit-logo.png)
 
 # Project : Cracking WEP
 
