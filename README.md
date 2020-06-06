@@ -72,7 +72,7 @@ Courses: Wireless Security
 
 SSID: LETHIHUYEN \*; 128-bit key; low password: 1234567890123
 
-![set up AP with low password](image\set-up-AP-low-pass.png)
+![set up AP with low password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/set-up-AP-low-pass.png)
 
 ### Step 2: Run monitor mode
 
@@ -80,7 +80,7 @@ SSID: LETHIHUYEN \*; 128-bit key; low password: 1234567890123
 
 Use the *iwconfig* command to check
 
-![start mode monitor](image\start-mode-monitor.png)
+![start mode monitor](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/start-mode-monitor.png)
 
 ### Step 3: Capture wireless packet
 
@@ -88,7 +88,7 @@ Use the *iwconfig* command to check
 
 Airodump-ng provides basic information cables such as: BSSID, beacons, data, channel, maximu speed, encryption algorithm, cipher detected, authentication protocol, ESSID
 
-![ariodump-ng collect base information](image\airodump-ng-collect-information.png)
+![ariodump-ng collect base information](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/airodump-ng-collect-information.png)
 
 We need lock the wireless card on the same channel as the AP with the following command: # iwconfig wlan0mon channel 1
 
@@ -104,7 +104,7 @@ The basic injection test provides additional valuable information as well
 >>
 >> -wlan0 is the interface name
 
-![injection test](image\injection-test.png)
+![injection test](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/injection-test.png)
 
 Capture wireless packet:
 
@@ -116,7 +116,7 @@ Capture wireless packet:
 >>
 >> -w WEPcrack: export to WEP crack file
 
-![capture packet](image\capture-file-wepcrack.png)
+![capture packet](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/capture-file-wepcrack.png)
 
 Generate traffic:
 
@@ -128,7 +128,7 @@ Generate traffic:
 >>
 >> -h E0:62:67:49:0D:74 is the source MAC address
 
-![generate traffic](image\generate-traffic-1.png)
+![generate traffic](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/generate-traffic-1.png)
 
 > #aireplay-ng -1 0 -e LETHIHUYEN\* -a 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:7A wlan0
 >
@@ -136,7 +136,7 @@ Generate traffic:
 >>
 >> 0 reassociation timing in seconds
 
-![generate traffic](image\generate-traffic-2.png)
+![generate traffic](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/generate-traffic-2.png)
 
 ### Step 4: Cracking WEP
 
@@ -144,18 +144,18 @@ Use the command #aircrack-ng WEPcrack-01.cap to analyze IVs in the file WEPcrack
 
 > Password: 1234567890123
 
-![find low password in WEPcrack](image\find-low-pass.png)
+![find low password in WEPcrack](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/find-low-pass.png)
 
 ### Step 5: Set up wifi modem (advance password)
 
 Password: LTH\*=.=@uit10
 
-![set up AP with advance passwork](image\set-up-AP-advance-pass.png)
+![set up AP with advance passwork](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/set-up-AP-advance-pass.png)
 
 The number of IVs collected is not enough for analysis, there will be a failure message showing the number of IVs needed.
 
-![fail to find password](image\fail-to-get-pass.png)
+![fail to find password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/fail-to-get-pass.png)
 
 We got the password
 
-![find advance password](image\find-advance-pass.png)
+![find advance password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/find-advance-pass.png)
