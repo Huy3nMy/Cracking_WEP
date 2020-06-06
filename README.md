@@ -12,7 +12,7 @@ Lecturer: Lê Kim Hùng
 
 Courses: Wireless Security
 
-[I.Introduce](#I.%20Introduce)
+[I.Introduce](#i-introduce)
 
 1. [Wired Equivalent Privacy](#1.%20Wired%20Equivalent%20Privacy%20(WEP))
 
