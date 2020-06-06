@@ -12,17 +12,17 @@ Lecturer: Lê Kim Hùng
 
 Courses: Wireless Security
 
-### [I.Introduce](#I.%20Introduce)
+[I.Introduce](#I.%20Introduce)
 
-1. ### [Wired Equivalent Privacy](#1.%20Wired%20Equivalent%20Privacy%20(WEP))
+1. [Wired Equivalent Privacy](#1.%20Wired%20Equivalent%20Privacy%20(WEP))
 
-2. ### [WEP Issues](#2.%20WEP%20Issues)
+2. [WEP Issues](#2.%20WEP%20Issues)
 
-### [II.Hardware](#II.%20Hardware)
+[II.Hardware](#II.%20Hardware)
 
-### [III.Cracking WEP](#III.%20Cracking%20WEP)
+[III.Cracking WEP](#III.%20Cracking%20WEP)
 
-1. ### [Aircrack-ng](#1.%20Aircrack-ng)
+1. [Aircrack-ng](#1.%20Aircrack-ng)
 
     - [Step 1: Set up wifi modem (low password)](#Step%201:%20Set%20up%20wifi%20modem%20(low%20password))
 
