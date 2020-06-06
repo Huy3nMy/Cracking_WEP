@@ -14,25 +14,25 @@ Courses: Wireless Security
 
 [I.Introduce](#i-introduce)
 
-1. [Wired Equivalent Privacy](#1.%20Wired%20Equivalent%20Privacy%20(WEP))
+1. [Wired Equivalent Privacy](#1-wired-equivalent-privacy-wep)
 
-2. [WEP Issues](#2.%20WEP%20Issues)
+2. [WEP Issues](#2-wep-issues)
 
-[II.Hardware](#II.%20Hardware)
+[II.Hardware](#ii-hardware)
 
-[III.Cracking WEP](#III.%20Cracking%20WEP)
+[III.Cracking WEP](#iii-cracking-wep)
 
-1. [Aircrack-ng](#1.%20Aircrack-ng)
+1. [Aircrack-ng](#1-aircrack-ng)
 
-    - [Step 1: Set up wifi modem (low password)](#Step%201:%20Set%20up%20wifi%20modem%20(low%20password))
+    - [Step 1: Set up wifi modem (low password)](#step-1-set-up-wifi-modem-low-password)
 
-    - [Step 2: Run monitor mode](#Step%202:%20Run%20monitor%20mode)
+    - [Step 2: Run monitor mode](#step-2-run-monitor-mode)
 
-    - [Step 3: Capture wireless packet](#Step%203:%20Capture%20wireless%20packet)
+    - [Step 3: Capture wireless packet](#step-3-capture-wireless-packet)
 
-    - [Step 4: Cracking WEP](#Step%204:%20Cracking%20WEP)
+    - [Step 4: Cracking WEP](#step-4-cracking-wep)
 
-    - [Step 5: Set up wifi modem (advance password)](#Step%205:%20Set%20up%20wifi%20modem%20(advance%20password))
+    - [Step 5: Set up wifi modem (advance password)](#step-5-set-up-wifi-modem-advance-password)
 
 # I. Introduce
 
