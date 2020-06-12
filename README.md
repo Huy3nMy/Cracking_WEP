@@ -98,7 +98,7 @@ The basic injection test provides additional valuable information as well
 >
 >> -9 means injection test
 >>
->> -e LETHIHUYEN\* teddy is the network name (SSID)
+>> -e LETHIHUYEN\* is the network name (SSID)
 >>
 >> -a 72:F4:C2:D1:75:08 is MAC address of the access point (BSSID)
 >>
