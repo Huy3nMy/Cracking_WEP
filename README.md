@@ -43,7 +43,7 @@ Courses: Wireless Security
 
 ## 2. WEP Issues
 
-- The IV is a 24-bit field is too small and is sent in the cleartext portion of a message
+- The IV is a 24-bit field which is too small and is sent in the cleartext portion of a message
 - Identical key streams are produced with the reuse of the same IP for data protection, as the IV is short key streams are repeated within short time
 - Lack of centralized key management makes it difficult to change the WEP keys with any regularity
 - When there is IV collision, it becomes possible to reconstruct the RC4 keystream based in the IV and the decrypted payload of the packet
@@ -51,7 +51,6 @@ Courses: Wireless Security
 - Use of RC4 was designed to be a one-time cipher and not intended for multiples message use
 - No defined method for encryption key distribution
 - Wirless adapters from the same vendor may all generate the same IV sequence. This enables attackers to determine the key stream and decrypt the ciphertext
-- Associate and disassociate messages are not authenticated
 - WEP does not provide cryptographic integrity protection. By capturing two packets an attacker can flip a bit in the encrypted stream and modify the checksum so that the paket is accepted
 - WEP is based on a password, prone to password cracking attacks
 - An attacker can construct a decryption table of the reconstructed key stream and can use it to decrypt the WEP packets in real-time
@@ -76,6 +75,8 @@ SSID: LETHIHUYEN \*; 128-bit key; low password: 1234567890123
 
 ### Step 2: Run monitor mode
 
+> #iw dev wlan0 set type monitor
+>
 > #airmon-ng start wlan0
 
 Use the *iwconfig* command to check
@@ -86,11 +87,12 @@ Use the *iwconfig* command to check
 
 > #airodump-ng wlan0
 
-Airodump-ng provides basic information cables such as: BSSID, beacons, data, channel, maximu speed, encryption algorithm, cipher detected, authentication protocol, ESSID
+Airodump-ng provides basic information of AP such as: BSSID, beacons, data, channel, max speed, encryption algorithm, cipher detected, authentication protocol, ESSID
 
 ![ariodump-ng collect base information](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/airodump-ng-collect-information.png)
 
-We need lock the wireless card on the same channel as the AP with the following command: # iwconfig wlan0mon channel 1
+We need lock the wireless card on the same channel as the AP with the following command: 
+> #iwconfig wlan0mon channel 1
 
 The basic injection test provides additional valuable information as well
 
