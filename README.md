@@ -163,7 +163,7 @@ We got the password
 ![find advance password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/find-advance-pass.png)
 
 
-2. [Kismet](#1.%20Aircrack-ng)
+2. Kismet
 
 Kismet uses wireless network card set in monitor mode to scan all Wi-fi channels in the surrounding area. Kismet visualizes networks in the surrounding area, the operation of devices connected to the networks in that area.
 
@@ -173,7 +173,7 @@ We can access the Kismet GUI by following the link *http://127.0.0.1:2501*
 
 Kismet can collect some information such as: Name, BSSID, MAC address, device type, frequency, channel, clients, crypto ...
 
-![Kismet GUI](image\kissmet.png)
+![Kismet GUI](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/kissmet.png)
 
 We can get more information of AP by clicking and read the information in the "Device Info"
 
@@ -194,16 +194,16 @@ Features:
 - Displays session summary at exit; shows any cracked keys
 - All passwords saved to cracked.txt
 
-![wifite](image\wifite.png)
+![wifite](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/wifite.png)
 
 Select target:
 
-![select target](image\select-target_wifite.png)
+![select target](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/select-target_wifite.png)
 
 There are many attack options:
 
-![options wifite](image\options_wifite.png)
+![options wifite](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/options_wifite.PNG)
 
 The password saved to cracked.txt: 123456789
 
-![low pass wifite](image\low_pass_wifite.png)
+![low pass wifite](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/low_pass_wifite.png)
