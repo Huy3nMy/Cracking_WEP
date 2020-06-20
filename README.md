@@ -161,3 +161,49 @@ The number of IVs collected is not enough for analysis, there will be a failure 
 We got the password
 
 ![find advance password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/find-advance-pass.png)
+
+
+2. [Kismet](#1.%20Aircrack-ng)
+
+Kismet uses wireless network card set in monitor mode to scan all Wi-fi channels in the surrounding area. Kismet visualizes networks in the surrounding area, the operation of devices connected to the networks in that area.
+
+> kismet -c wlan0
+
+We can access the Kismet GUI by following the link *http://127.0.0.1:2501*
+
+Kismet can collect some information such as: Name, BSSID, MAC address, device type, frequency, channel, clients, crypto ...
+
+![Kismet GUI](image\kissmet.png)
+
+We can get more information of AP by clicking and read the information in the "Device Info"
+
+3. [Wifite]
+
+Wifite is an automated wireless attack tool for *Linux only*. 
+
+Features:
+
+- Sorts targets by signal strength (in dB); cracks closest access points first
+- Automatically de-authenticates clients of hidden networks to reveal SSIDs
+- Numerous filters to specify exactly what to attack (wep/wpa/both, above certain signal strengths, channels, etc)
+- Customizable settings (timeouts, packets/sec, etc)
+“anonymous” feature; changes MAC to a random address before attacking, then changes back when attacks are complete
+- All captured WPA handshakes are backed up to wifite.py’s current directory
+- Smart WPA de-authentication; cycles between all clients and broadcast deauths
+- Stop any attack with Ctrl+C, with options to continue, move onto next target, skip to cracking, or exit
+- Displays session summary at exit; shows any cracked keys
+- All passwords saved to cracked.txt
+
+![wifite](image\wifite.png)
+
+Select target:
+
+![select target](image\select-target_wifite.png)
+
+There are many attack options:
+
+![options wifite](image\options_wifite.png)
+
+The password saved to cracked.txt: 123456789
+
+![low pass wifite](image\low_pass_wifite.png)
