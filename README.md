@@ -167,7 +167,7 @@ We got the password
 ![find advance password](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/find-advance-pass.png)
 
 
-##2. Kismet
+## 2. Kismet
 
 Kismet uses wireless network card set in monitor mode to scan all Wi-fi channels in the surrounding area. Kismet visualizes networks in the surrounding area, the operation of devices connected to the networks in that area.
 
@@ -181,7 +181,7 @@ Kismet can collect some information such as: Name, BSSID, MAC address, device ty
 
 We can get more information of AP by clicking and read the information in the "Device Info"
 
-##3. Wifite
+## 3. Wifite
 
 Wifite is an automated wireless attack tool for *Linux only*. 
 
