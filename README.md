@@ -183,7 +183,7 @@ We can get more information of AP by clicking and read the information in the "D
 
 Use Kismet to capture packet from channel
 
-![Kismet lock channel](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/kissmet_capture_packet.png)
+![Kismet lock channel](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/kissmet_capture_packet.PNG)
 
 By default Kismet capture type kismet. Change to pcapng type in */etc/kismet/kismet_logging.conf*
 
