@@ -181,6 +181,18 @@ Kismet can collect some information such as: Name, BSSID, MAC address, device ty
 
 We can get more information of AP by clicking and read the information in the "Device Info"
 
+Use Kismet to capture packet from channel
+
+![Kismet lock channel](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/kissmet_capture_packet.png)
+
+By default Kismet capture type kismet. Change to pcapng type in */etc/kismet/kismet_logging.conf*
+
+Then use aircrack-ng to crack the captured file. Because aircrack-ng only recognizes the pcap format, we convert pcapng to pcap
+
+>Tshark -F pcap -r Kismet-20200629-22-29-33-1.pcapng -w wifi.pcap
+
+Now we can find the packet by *aircack-ng*
+
 ## 3. Wifite
 
 Wifite is an automated wireless attack tool for *Linux only*. 
