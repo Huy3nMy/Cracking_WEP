@@ -48,13 +48,11 @@ Courses: Wireless Security
 ## 2. WEP Issues
 
 - The IV is a 24-bit field which is too small and is sent in the cleartext portion of a message
-- Identical key streams are produced with the reuse of the same IP for data protection, as the IV is short key streams are repeated within short time
-- Lack of centralized key management makes it difficult to change the WEP keys with any regularity
+- Identical key streams are produced with the reuse of the same IV for data protection, as the IV is short key streams are repeated within short time
 - When there is IV collision, it becomes possible to reconstruct the RC4 keystream based in the IV and the decrypted payload of the packet
 - IV is a part of the RC4 encryption key, leads to a analytical attack that recovers the key after intercepting and analyzing a relatively small amount of traffic
 - Use of RC4 was designed to be a one-time cipher and not intended for multiples message use
 - Wirless adapters from the same vendor may all generate the same IV sequence. This enables attackers to determine the key stream and decrypt the ciphertext
-- WEP is based on a password, prone to password cracking attacks
 - An attacker can construct a decryption table of the reconstructed key stream and can use it to decrypt the WEP packets in real-time
 
 # II. Hardware
