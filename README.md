@@ -53,7 +53,6 @@ Courses: Wireless Security
 - When there is IV collision, it becomes possible to reconstruct the RC4 keystream based in the IV and the decrypted payload of the packet
 - IV is a part of the RC4 encryption key, leads to a analytical attack that recovers the key after intercepting and analyzing a relatively small amount of traffic
 - Use of RC4 was designed to be a one-time cipher and not intended for multiples message use
-- No defined method for encryption key distribution
 - Wirless adapters from the same vendor may all generate the same IV sequence. This enables attackers to determine the key stream and decrypt the ciphertext
 - WEP does not provide cryptographic integrity protection. By capturing two packets an attacker can flip a bit in the encrypted stream and modify the checksum so that the paket is accepted
 - WEP is based on a password, prone to password cracking attacks
